@@ -42,6 +42,30 @@ console.log( ~~"20" );
 
 console.log( 20 + '' );
 
+
+
+console.warn('Uwaga!');
+console.error('Błąd!');
+console.info('Informacja!');
+
+console.group('Nazwa grupy');
+console.log('Ala ma kota');
+console.log('Kot ma Alę');
+console.groupEnd();
+
+const myName = 'Adrian';
+const mySecondName = 'Krzysztof';
+const myLastName = 'Rydzyński';
+console.log("Nazywam się", myName);
+console.log("A także", myName, mySecondName);
+console.log({
+    myName: myName,
+    mySecondName,
+    myLastName: "Nazwisko moje brzmi: " + myLastName
+});
+
+
+
 function addElementToDOM(firstValue, secondValue, action, result) {
     const el = document.querySelector('.result');
 
@@ -63,6 +87,8 @@ window.onload = function() {
 
         const firstValueNumber = Number(firstValue);
         const secondValueNumber = Number(secondValue);
+
+        // console.dir(document.querySelector('.action'));
         
         let result;
 
